@@ -1,0 +1,17 @@
+mat-sidenav {
+
+  width: 200px;
+  min-height: 100%;
+  border-right: none;
+  background: #002b5c;
+  color: white;
+
+  padding: 16px;
+
+}
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+.active{
+color: yellow;
+}
