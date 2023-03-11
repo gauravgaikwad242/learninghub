@@ -1,0 +1,7 @@
+<form #edform="ngForm" (submit)="submit(edform)">
+  <editor  name="editors"  ngModel [init]="{plugins: 'link'}"></editor>
+  <button type="submit">print</button>
+</form>
+<div>
+  <textarea [(ngModel)]="texted" name="" id="" cols="100" rows="10"></textarea>
+</div>

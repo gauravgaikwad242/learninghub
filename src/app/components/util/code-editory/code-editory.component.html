@@ -3,4 +3,11 @@
   <textarea ngModel placeholder="enter your code here"  name="inputEditor" id="inputEditor" cols="30" rows="10"></textarea>
   <button mat-raised-button color="primary" type="submit">Run</button>
 </form>
-t
+<div>
+  <h5>result</h5>
+  <input type="text" disabled [(ngModel)]="result">
+  <h6>{{result}}</h6>
+  <p [innerHTML]="result"></p>
+
+</div>
+
