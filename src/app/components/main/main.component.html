@@ -2,14 +2,20 @@
   <button (click)="opendrawer = !opendrawer" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Javascript</span>
+  <span class="cursorPointer" routerLink="/javascript/introduction">Javascript</span>
    <a mat-button>Home</a>
-   <a mat-button>About</a>
+   <button routerLink="/css" mat-button>CSS</button>
    <a mat-button>Contact</a>
+   <a routerLink="/javascript/editor" mat-button>Editor</a>
+   <a routerLink="/javascript/textEditor" mat-button>Text Editor</a>
   </mat-toolbar>
 <mat-sidenav-container  class="example-container">
   <mat-sidenav  [(opened)]="opendrawer" mode="side">
-    <a routerLinkActive="active" routerLink="introduction">Introduction</a>
+    <!-- <button routerLinkActive="active" color="yellow" routerLink="/javascript/introduction" mat-button>Introduction</button> -->
+    <!-- <a name="css" id="cssbutton" routerLinkActive="active" class="btn btn-link" routerLink="/javascript/introduction" role="button">Introduction</a> -->
+    <a *ngFor="let menuItem of sideMenu|sortFieldArray:'placement':Order.ascending" name="css" id="cssbutton" routerLinkActive="active" class="btn btn-link" [routerLink]="menuItem.routerLink" role="button">{{menuItem.displayName}}</a>
+
+
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
