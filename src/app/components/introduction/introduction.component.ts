@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -19,7 +19,9 @@ content:any= `<p>-dynamically typed , Synchronous &amp; single-threaded Programm
   }
   ngOnInit(): void {
    this.title.setTitle("introduction")
+
   }
+
 
 
 
