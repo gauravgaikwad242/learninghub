@@ -1,0 +1,7 @@
+<p>observables-operators works!</p>
+<form [formGroup]="searchFormGroup">
+  <input formControlName="searchString" type="text"  (input)="inputEventHandler()">
+</form>
+<div >{{searchResult$ |async}}</div>
+
+<div >{{!!searchResult$ }}</div>
