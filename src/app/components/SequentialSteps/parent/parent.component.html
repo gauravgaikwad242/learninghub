@@ -1,0 +1,14 @@
+
+<button
+ mat-raised-button color="primary"
+ mat-button (click)="switchToPrevComponent()" [disabled]="!canGoBack()">
+  Back
+</button>
+<button
+ mat-raised-button color="primary"
+ mat-button (click)="switchToNextComponent()" [disabled]="!canGoNext()">
+  Next
+</button>
+<mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
+
+<div jsComponentInjector></div>

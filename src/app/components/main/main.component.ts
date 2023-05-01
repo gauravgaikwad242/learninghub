@@ -11,8 +11,9 @@ export class MainComponent {
   readonly Order=Order
   sideMenu:SideMenu[]=[
     new SideMenu(1,"/javascript/introduction","Introduction"),
-    new SideMenu(2,"/javascript/introduction","Introduction2"),
-    new SideMenu(3,"/javascript/introduction","Introduction3")
+    new SideMenu(2,"/javascript/Observable","Observables Intro"),
+    new SideMenu(3,"/javascript/ObservableOperator","Observables-Operator"),
+    new SideMenu(4,"/javascript/SeqentialOperation","Sequential"),
   ]
 
   // public get Order(){
